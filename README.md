@@ -17,4 +17,4 @@
 In this moment your project running total 3 terminals (Django Project + Redis server + Celery )
 
 ### - I used Celery distributed task queue, which help this program to work smoothly in the background without stucking on one task.
-### - POSTMAN File is also attached in this project FILE_NAME: "Ads-Postman"
+### - POSTMAN File is also attached in this project FILE_NAME: "Ads-Postman_collection.json"
