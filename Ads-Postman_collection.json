@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "06ecb331-9148-47cb-8d98-fc25a0d6fff6",
+		"name": "Ads-Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16392870"
+	},
+	"item": [
+		{
+			"name": "Search with Keywords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/ad-filter?search=LHR",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ad-filter"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "LHR"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Ads",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Samsung Galaxy Ultra",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "Example Ads",
+							"type": "text"
+						},
+						{
+							"key": "cities",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2022-01-01",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2022-01-31",
+							"type": "text"
+						},
+						{
+							"key": "visitors_per_day",
+							"value": "40",
+							"type": "text"
+						},
+						{
+							"key": "is_active",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/ads/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"ads",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
